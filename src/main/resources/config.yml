@@ -1,0 +1,79 @@
+# ╔═══════════════════════════════════════════════╗
+# ║            GGWave Configuration               ║
+# ╠═══════════════════════════════════════════════╣
+# ║  Author: ISekai | Discord: akumasekai         ║
+# ╚═══════════════════════════════════════════════╝
+
+# How long the GG wave lasts in seconds
+wave-duration: 30
+
+# Store URL shown in the announcement
+store-url: "STORE.EXAMPLE.COM"
+
+# Rewards for players who say GG
+rewards:
+  enabled: true
+  # Max number of players that can be rewarded (0 = unlimited)
+  player-limit: 0
+  # Commands to run as console for each rewarded player
+  # {player} = player name, {target} = the player being celebrated
+  commands:
+    - "give {player} diamond 1"
+
+# Title shown to the celebrated player
+title:
+  enabled: true
+  duration: 10
+  title: "<bold><gradient:#FF0000:#FFFF00:#00FF00>GG WAVE!</gradient></bold>"
+  subtitle: "<gray>Thank you for supporting the server!</gray>"
+
+# Firework particles around the celebrated player
+fireworks:
+  enabled: true
+  # Duration in seconds
+  duration: 10
+  # Interval in ticks between particle bursts
+  interval: 5
+
+# Chat format for GG messages
+player-message:
+  format: "{prefix}{player} <dark_gray>→</dark_gray> {colored_gg}"
+  # Whether GG text has obfuscated animation
+  obfuscated: false
+
+# Color loop for each successive GG message
+color-loop:
+  - "&#FF0000"
+  - "&#FF3300"
+  - "&#FF6600"
+  - "&#FF9900"
+  - "&#FFCC00"
+  - "&#FFFF00"
+  - "&#CCFF00"
+  - "&#99FF00"
+  - "&#66FF33"
+  - "&#33FF66"
+  - "&#00FF99"
+  - "&#00FFCC"
+  - "&#00CCFF"
+  - "&#0099FF"
+  - "&#0066FF"
+  - "&#3300FF"
+
+# Sounds
+sounds:
+  wave-start:
+    enabled: true
+    sound: "BLOCK_BEACON_ACTIVATE"
+    volume: 1.0
+    pitch: 1.0
+  wave-end:
+    enabled: true
+    sound: "BLOCK_BEACON_DEACTIVATE"
+    volume: 1.0
+    pitch: 1.0
+  player-message:
+    enabled: true
+    sound: "ENTITY_PLAYER_LEVELUP"
+    volume: 0.5
+    pitch: 1.5

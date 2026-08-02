@@ -1,0 +1,30 @@
+# ╔═══════════════════════════════════════════════╗
+# ║            GGWave Messages                     ║
+# ╠═══════════════════════════════════════════════╣
+# ║  Supports MiniMessage and &#RRGGBB format     ║
+# ╚═══════════════════════════════════════════════╝
+
+prefix: "<gradient:#FFD700:#FFA500>GGWave</gradient> <dark_gray>»</dark_gray> "
+
+# Announcement lines sent as a player-head chat message
+# {player} = celebrated player, {purchase} = what they bought, {store} = store URL
+announcement:
+  - "<bold><gradient:#FF0000:#FFFF00:#00FF00>GG WAVE ACTIVATED!</gradient></bold>"
+  - "<gray>Thank you</gray> <white><bold>{player}</bold></white> <gray>for</gray>"
+  - "<gray>supporting the server!</gray>"
+  - ""
+  - "<gray>They purchased</gray> <white><bold>{purchase}</bold></white> <gray>on our store!</gray>"
+  - ""
+  - "<bold><gradient:#FFD700:#FFA500>Congratulate them with 'GG'!</gradient></bold>"
+  - "<gray>{store}</gray>"
+
+wave-started: "<green>GG Wave started for <white>{player}</white>!"
+wave-ended: "<yellow>The GG Wave Is Over!"
+wave-already-active: "<red>A GG wave is already active!"
+no-player: "<red>Player not found!"
+already-said-gg: "<red>You already said GG!"
+limit-reached: "<red>The GG reward limit has been reached!"
+reload: "<green>Configuration & messages reloaded!"
+no-permission: "<red>You don't have permission to do that!"
+usage: "<gray>Usage: /ggwave start <player> <purchase>"
+not-during-wave: "<red>You can only say GG during a GG wave!"

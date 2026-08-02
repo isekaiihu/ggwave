@@ -1,0 +1,24 @@
+name: GGWave
+version: '${version}'
+main: com.isekai.ggwave.GGWave
+api-version: '1.21'
+folia-supported: false
+author: ISekai
+description: Celebrate store purchases with GG waves, fireworks, and rewards
+softdepend:
+  - PlaceholderAPI
+  - LuckPerms
+
+commands:
+  ggwave:
+    description: GGWave management commands
+    usage: /<command> <start|reload> [player] [purchase]
+    aliases: [gg-wave]
+
+permissions:
+  ggwave.admin:
+    description: Access to all GGWave commands
+    default: op
+  ggwave.participate:
+    description: Can participate in GG waves
+    default: true
